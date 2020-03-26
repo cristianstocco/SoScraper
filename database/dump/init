@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS `demoagileapis_first`;
+CREATE DATABASE IF NOT EXISTS `demoagileapis_first` DEFAULT CHARACTER SET ascii COLLATE ascii_general_ci;
+USE `demoagileapis_first`;

@@ -1,0 +1,60 @@
+/* Icon Fonts */
+@font-face {
+  font-family: 'elvia';
+  src: url('font/elvia.eot?24490381');
+  src: url('font/elvia.eot?24490381#iefix') format('embedded-opentype'),
+       url('font/elvia.woff2?24490381') format('woff2'),
+       url('font/elvia.woff?24490381') format('woff'),
+       url('font/elvia.ttf?24490381') format('truetype'),
+       url('font/elvia.svg?24490381#elvia') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.f_i {
+  display: inline-block;
+  font-family: 'elvia';
+  font-size: 18px;
+  font-style: normal;
+  text-rendering: auto;
+  color: $white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-elvia_ac-04:before { content: '\e801'; } /* '' */
+.icon-elvia_ac-12:before { content: '\e802'; } /* '' */
+.icon-elvia_bike:before { content: '\e803'; } /* '' */
+.icon-elvia_car:before { content: '\e804'; } /* '' */
+.icon-elvia_doccia:before { content: '\e805'; } /* '' */
+.icon-elvia_lock-06:before { content: '\e806'; } /* '' */
+.icon-elvia_colazione:before { content: '\e807'; } /* '' */
+.icon-elvia_mail:before { content: '\e808'; } /* '' */
+.icon-elvia_lock-13:before { content: '\e809'; } /* '' */
+.icon-elvia_p:before { content: '\e80a'; } /* '' */
+.icon-elvia_phon:before { content: '\e80b'; } /* '' */
+.icon-elvia_pin:before { content: '\e80c'; } /* '' */
+.icon-elvia_train:before { content: '\e80d'; } /* '' */
+.icon-elvia_tv:before { content: '\e80e'; } /* '' */
+.icon-fb:before { content: '\e80f'; } /* '' */
+.icon-elvia_twitter:before { content: '\e810'; } /* '' */
+.icon-elvia_phone:before { content: '\e811'; } /* '' */
+.icon-instagram:before { content: '\e812'; } /* '' */
+
+[class^="icon-"],
+[class*=" icon-"] {
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  @if settings('use-font-smooth') {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@each $name, $char in $icons {
+  .icon-#{$name}:before {
+    content: $char;
+  }
+}

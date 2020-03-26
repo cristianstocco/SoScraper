@@ -1,0 +1,79 @@
+
+/* example 5 */
+.toggle_menu span {
+	-webkit-transition-duration: 0s; transition-duration: 0s;
+	-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.toggle_menu.mobile_menu_open span {
+	background-color: rgba(0,0,0,0.0);
+	-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.toggle_menu span:before {
+	-webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+	-webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+	-webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+}
+.toggle_menu.mobile_menu_open span:before {
+	margin-top: 0;
+	-webkit-transform: rotate(45deg); transform: rotate(45deg);
+	-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+}
+.toggle_menu span:after {
+	-webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+	-webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+	-webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+}
+.toggle_menu.mobile_menu_open span:after {
+	margin-top: 0;
+	-webkit-transform: rotate(-45deg); transform: rotate(-45deg);
+	-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+}
+.toggle_menu {
+	position: relative;
+	display:  inline-block;
+	width: 50px;
+	height: 50px;
+	span {
+		margin: 0 auto;
+		position: relative;
+		top: 12px;
+		&:before, &:after{
+			position: absolute;
+			content: '';
+
+		}
+	}
+	span:before {
+    margin-top: -8px;
+	}
+	span:after {
+		margin-top: 8px;
+	}
+}
+#menu.mobile_menu_open {
+    visibility: visible;
+	opacity: 1;
+	    transform: translateY(0);
+
+
+}
+#mast_head .toggle_menu{
+	padding: 0;
+	padding-top: 10px;
+    margin-right: 20px;
+}
+.toggle_menu span, .toggle_menu span:before, .toggle_menu span:after {
+	width: 30px;
+	height: 3px;
+	background-color: #fff;
+	display: block;
+}
+@media screen and (max-width: 1024px) {
+	/* #menu is the original menu */
+
+	header#masthead{
+		padding: 0;
+	}
+	
+
+}

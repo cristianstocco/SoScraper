@@ -1,0 +1,49 @@
+/* Cookie Banner Module */
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(100%);
+  background-color: $cookie-banner-bg;
+  color: $cookie-banner-color;
+  will-change: transform;
+  backface-visibility: hidden;
+  transition: transform 0.4s $snappy;
+  z-index: z("banner");
+  .banner-container {
+    position: relative;
+    padding: 18px 20px;
+    overflow: hidden;
+    text-align: center;
+    p {
+      font-size: em(13px);
+      margin: 0;
+      a {
+        text-decoration: underline;
+        &.confirm-cookies {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &.is-banner-open {
+    transform: translateY(0);
+  }
+}
+
+.cookie-btn {
+  display: inline-block;
+  padding-left: 22px;
+}
+.confirm-cookies {
+  padding: 7px 19px;
+  background-color: #fafafa;
+  color: #333;
+  transition: all 0.3s ease;
+  .no-touch &:hover {
+    color: #333;
+    background-color: white;
+  }
+}

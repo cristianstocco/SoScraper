@@ -1,0 +1,38 @@
+{
+  "name": "SoScraper",
+  "version": "1.0.0",
+  "description": "Laravel, html5, css3",
+  "main": "gulpfile.js",
+  "homepage": "http://www.soscraper.com/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "ídeo",
+    "url": "http://wwww.ideonetwork.it/"
+  },
+  "license": {
+    "name": "GNU General Public License v2 or later",
+    "url": "http://www.gnu.org/licenses/gpl-2.0.html"
+  },
+  "devDependencies": {
+    "browser-sync": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-concat": "*",
+    "gulp-cssnano": "*",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-header": "*",
+    "gulp-if": "*",
+    "gulp-load-plugins": "*",
+    "gulp-plumber": "*",
+    "gulp-sass": "*",
+    "gulp-size": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-task-listing": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "yargs": "^4.6.0"
+  }
+}

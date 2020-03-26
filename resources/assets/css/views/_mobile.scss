@@ -1,0 +1,133 @@
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media (max-width: 1024px) { @content; }
+  }
+  @else if $point == medium {
+    @media (max-width: 768px) { @content; }
+  }
+  @else if $point == small {
+    @media (max-width: 480px)  { @content; }
+  }
+}
+@include breakpoint(large){
+  .img_clients {
+      margin-right: 3%;
+  }
+  #mast_head a{
+    padding: 0 15px;
+  }
+      #logo{
+      padding-left: 10px;
+    }
+}
+.toggle_menu{
+  display: none;
+}
+@include breakpoint(medium){
+	.box_pricing{
+		width: 100%;
+		margin-right: 0;
+	}
+  #fp-nav{
+    display: none;
+  }
+  .button_call{
+    width: 70%;
+  }
+#aboutus_section h2 {
+    margin-bottom: 50px;
+}
+.text_box {
+    width: 100%;
+}
+.image_crawl{
+  svg{
+    width: 100%;
+  }
+
+}
+.profile_box{
+  display: none;
+}
+.content_text_desc.left .text_box{
+  padding-left: 0;
+}
+.content_text_desc.right .text_box{
+  padding-right: 0;
+}
+.content_text_desc.right .text_box h3, .content_text_desc.right .content_section p{
+  text-align:left;
+}
+
+  #mast_head .has_submenu{
+    display: none;
+  }
+  .center{
+    padding: 0 30px;
+  }
+  .content_section h2 {
+      margin-bottom: 20px;
+  }
+  .content_text_service{
+    margin-bottom: 30px;
+  }
+
+
+}
+@media screen and (max-width: 550px){
+    #menu{
+      visibility: hidden;
+      opacity: 0;
+      text-align: left;
+      position: fixed;
+      top: 50px;
+      background-color: #251721;
+      width: 100%;
+      transition: all 0.5s ease;
+      transform: translateY(-20px);
+      padding: 0 25px;
+    }
+    #mast_head #menu a{
+      padding: 0 ;
+    }
+    .toggle_menu{
+      display: block;
+      float: right;
+    }
+      input{
+    width: 100%;
+  }
+  section{
+        padding: 15px 0 0;
+  }
+
+}
+@include breakpoint(small){
+.text_crawl{
+  width: 100%;
+
+}
+.content_section {
+    padding: 0 15px;
+}
+.content_services .next, .content_services .prev{
+  display: none;
+}
+.service_content{
+  width: 100%;
+}
+  .image_crawl{
+    display: none;
+    
+  }
+  #clients_section h2, #creators_section h2{
+    width: 75%;
+        font-size: 30px;
+  }
+  .content_section h2{
+    font-size: 30px;
+  }
+  body{
+    font-size: 15px;
+  }
+}

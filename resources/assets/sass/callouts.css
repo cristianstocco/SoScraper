@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 11, 2016, 8:34:23 PM
+    Author     : user
+*/
+.callout-dark {
+    padding: 30px;
+    color: #fff;
+    background-color: #252525;
+    margin-bottom: 10px;
+}
+
+.callout-bubble {
+    padding: 30px;
+    color: #fff;
+    background-color: #A94545;
+    margin-bottom: 10px;
+}

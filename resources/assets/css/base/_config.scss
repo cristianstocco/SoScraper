@@ -1,0 +1,188 @@
+// Project config map
+ $_settings: (
+  'use-opentype'    :     false,
+  'use-font-smooth' :     true,
+  'minor-typo'      :     false,
+  'form-controls'   :     false,
+  'sticky-footer'   :     false
+);
+
+// Retrieve data from the map
+@function settings($key) {
+  @return map-get($_settings, $key);
+}
+
+// COLORS
+
+//Project-colors
+$black           :  #251721;
+$mine-shaft      :  #333333;
+$white           :  #ffffff;
+$gray            :  #818181;
+$rolling-stone   :  #78797a;
+$panna           : #ebebeb;
+$crimson         :  #E3171A;
+$Shamrock         : #33CC99;
+$arancio         : #eac483;
+$ocra            : #ffbf70;
+$acqua           : #89bdd3;
+$maron         : #756241;
+$blu          : #185a9d;
+$FunBlue         :#185a9d;
+// Social-brand colors
+$fb           :  #3b5998;
+$twitter      :  #55acee;
+$gplus        :  #dd4b39;
+$linkedin     :  #007bb6;
+$instagram    :  #517fa4;
+$pinterest    :  #cb2027;
+$flickr-1     :  #ff0084;
+$flickr-2     :  #0063dc;
+$tumblr       :  #32506d;
+$dribble      :  #ea4c89;
+$behance      :  #1769ff;
+$vine         :  #00bf8f;
+$spotify      :  #2ebd59;
+$tripadvisor  :  #589442;
+$yahoo        :  #400191;
+$youtube      :  #cd201f;
+
+// TYPOGRAPHY
+$light                  :  300;
+$regular                :  400;
+$bold                   :  700;
+$boldone                :  900;
+
+$font-family-sans-serif : 'Lato', sans-serif;
+$font-sans-serif-2      : "Interstate-Black", "Helvetica", "Arial", sans-serif !default;
+$font-family-serif      : "Palatino Linotype", "Times New Roman", Times, serif !default;
+$font-family-monospace  : "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier", monospace !default;
+$font-stack             : $font-family-sans-serif !default;
+$font-size-base         : 20px !default;
+$em-base                : 20px;
+$line-base              : 1 !default;
+$font-size-h1           : 60px !default;
+$font-size-h2           : 50px !default;
+$font-size-h3           : 40px !default;
+$font-size-h4           : 35px !default;
+$font-size-h5           : 30px !default;
+$font-size-h6           : 25px !default;
+$font-size-small        : 100% !default;
+
+// Icon Fonts
+$icon-font-name: 'project' !default;
+$icon-font-path: "../fonts/" + $icon-font-name !default;
+
+// Map icon names to font unicode characters
+$icons: (
+  facebook:     "\e600",
+  twitter:      "\e601"
+);
+
+// By default, this inherits from the body.
+$headings-font-family : 'Montserrat', sans-serif;
+$headings-color       : inherit !default;
+$headings-line-height : 1 !default;
+
+// BASE
+
+$body-bg          : #F6F5F2 !default;
+$base-spacing     : $line-base * $font-size-base !default;
+$text-color       : $black !default;
+$link-color       : $mine-shaft !default;
+
+$selection-color  : $body-bg !default;
+$selection-bg     : $black !default;
+
+// LAYOUT
+
+$main-max-width       :  1000px !default;
+$main-max-width_large :  1170px !default;
+
+// MODULES
+
+// ie-prompt
+$warning-bg    : #ccc;
+$warning-color :  #dd6f00;
+
+// Header
+$hero-bg : #333;
+
+// Cookie Banner
+$cookie-banner-bg   : #fafafa;
+$cookie-banner-color: #333;
+
+// Button colors.
+
+// Navbar colors.
+$nav-bg    : white;
+$nav-color : black;
+
+// Footer colors.
+$footer-bg     : $maron;
+$footer-color  : $white;
+$footer-height : 75px;
+
+// VIEWS
+
+
+// GRID
+
+// Breakpoints
+$phone         : 319px;
+$phone-up      : 320px;
+$mobile        : 540px;
+$mobile-up     : 541px;
+$tab-down      : 767px;
+$tab           : 768px;
+$desk          : 1023px;
+$desktop       : 1024px;
+$large         : 1200px;
+$x-large       : 1600px;
+
+// UTILS
+
+// CSS cubic-bezier timing functions. Refer to http://cubic-bezier.com/ or http://matthewlein.com/ceaser/ for more.
+$cubic: cubic-bezier(0.4, 0.01, 0.165, 0.75);
+
+// EASE IN
+
+$ease-in-quad       :  cubic-bezier(0.550,  0.085, 0.680, 0.530);
+$ease-in-cubic      :  cubic-bezier(0.550,  0.055, 0.675, 0.190);
+$ease-in-quart      :  cubic-bezier(0.895,  0.030, 0.685, 0.220);
+$ease-in-quint      :  cubic-bezier(0.755,  0.050, 0.855, 0.060);
+$ease-in-sine       :  cubic-bezier(0.470,  0.000, 0.745, 0.715);
+$ease-in-expo       :  cubic-bezier(0.950,  0.050, 0.795, 0.035);
+$ease-in-circ       :  cubic-bezier(0.600,  0.040, 0.980, 0.335);
+$ease-in-back       :  cubic-bezier(0.600, -0.280, 0.735, 0.045);
+// EASE OUT
+$ease-out-quad      :  cubic-bezier(0.250,  0.460, 0.450, 0.940);
+$ease-out-cubic     :  cubic-bezier(0.215,  0.610, 0.355, 1.000);
+$ease-out-quart     :  cubic-bezier(0.165,  0.840, 0.440, 1.000);
+$ease-out-quint     :  cubic-bezier(0.230,  1.000, 0.320, 1.000);
+$ease-out-sine      :  cubic-bezier(0.390,  0.575, 0.565, 1.000);
+$ease-out-expo      :  cubic-bezier(0.190,  1.000, 0.220, 1.000);
+$ease-out-circ      :  cubic-bezier(0.075,  0.820, 0.165, 1.000);
+$ease-out-back      :  cubic-bezier(0.175,  0.885, 0.320, 1.275);
+// EASE IN OUT
+$ease-in-out-quad   :  cubic-bezier(0.455,  0.030, 0.515, 0.955);
+$ease-in-out-cubic  :  cubic-bezier(0.645,  0.045, 0.355, 1.000);
+$ease-in-out-quart  :  cubic-bezier(0.770,  0.000, 0.175, 1.000);
+$ease-in-out-quint  :  cubic-bezier(0.860,  0.000, 0.070, 1.000);
+$ease-in-out-sine   :  cubic-bezier(0.445,  0.050, 0.550, 0.950);
+$ease-in-out-expo   :  cubic-bezier(1.000,  0.000, 0.000, 1.000);
+$ease-in-out-circ   :  cubic-bezier(0.785,  0.135, 0.150, 0.860);
+$ease-in-out-back   :  cubic-bezier(0.680, -0.550, 0.265, 1.550);
+// CUSTOM
+$elastic            :  cubic-bezier(0.320,  1.259, 0.375, 1.150);
+$snappy             :  cubic-bezier(0.694,  0.048, 0.335, 1.000);
+$cubic-snap         :  cubic-bezier(1.000,  0.000, 0.175, 1.000);
+
+// Z-Layers Map
+$z-layers: (
+  banner    :  50,
+  modal     :  30,
+  menu      :  10,
+  header    :  2,
+  default   :  1
+);

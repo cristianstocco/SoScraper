@@ -1,0 +1,240 @@
+// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+#app-layout {
+  padding: 100px 10% 0 10%;
+}
+
+.general-title {
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+
+.general-description {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 0 15px 0;
+}
+
+.paragraph {
+  padding-bottom: 10px;
+}
+
+.error {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-weight: bold;
+  color: darkred;
+}
+
+/* OVERLAY
+*/
+#overlay {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  background-color: gainsboro;
+  z-index: 1030;
+  display: none;
+
+  section.content {
+    padding: 5%;
+  }
+
+  header {
+    padding: 5%;
+    padding-bottom: 0;
+    text-align: right;
+  }
+}
+/*
+* OVERLAY */
+
+section.secondary-navbar {
+  padding-bottom: 50px;
+
+  li {
+    padding: 0 20px;
+  }
+}
+
+nav#api-actions {
+  article {
+    float: left;
+    width: calc(100% / 5);
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #4371d0;
+    margin: 0 2.5%;
+
+    a {
+      color: ghostwhite;
+    }
+  }
+}
+
+section#media {
+  article {
+    float: left;
+    width: 20%;
+    height: 400px;
+  }
+
+  .title {
+    height: 50px;
+  }
+
+  .description {
+    height: 300px;
+    overflow-y: auto;
+  }
+}
+section#sub-media {
+  padding-top: 20px;
+
+  article {
+    p.selector {
+      float: left;
+      width: 5%;
+    }
+
+    p.title {
+      float: left;
+      width: 25%;
+
+      font-weight: bold;
+    }
+
+    p.description {
+      float: left;
+      width: 70%;
+    }
+  }
+}
+
+#modes article {
+  padding-top: 10px;
+}
+
+#schedulers {
+  .scheduler {
+    float: left;
+    width: calc(100% / 5);
+  }
+
+  .edge {
+    padding-bottom: 30px;
+
+    .title {
+      text-align: center;
+      font-weight: bold;
+      color: red;
+    }
+  }
+}
+
+#providers {
+  article.provider {
+    float: left;
+    width: calc(100% / 5);
+    text-align: center;
+    padding: 10px 0px;
+    background-color: #437150;
+
+    margin: 0 2.5%;
+    color: ghostwhite;
+  }
+}
+
+#show {
+  #apiGroupPartial, #apiGroupFull, #apiGroupInfo {
+    .group {
+      float: left;
+      width: calc(100% / 5);
+      text-align: center;
+      padding: 20px;
+      background-color: #4371d0;
+      margin: 5% 2.5%;
+
+      > div {
+        padding-bottom: 10px;
+        
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+#sub-apiGroup {
+  article.api {
+    float: left;
+    width: calc(100% / 5);
+    text-align: center;
+    padding: 20px;
+    background-color: #4371d0;
+    margin: 5% 2.5%;
+
+    > div {
+      padding-bottom: 10px;
+
+      span {
+        display: block;
+      }
+    }
+
+    .label {
+      font-weight: bold;
+      color: #e26e0f;
+    }
+  }
+}
+
+#settings {
+  div {
+    padding-bottom: 20px;
+  }
+}
+
+#statistics {
+  #apiGroup {
+    .group {
+
+      padding-bottom: 30px;
+
+      .details {
+        background-color: #f0ad4e;
+        margin: 20px;
+        margin-top: 0;
+        padding-top: 10px;
+
+        div {
+          text-align: center;
+          padding-bottom: 10px;
+        }
+      }
+
+      #dates {
+        .lastUpdate, .totalUpdates {
+          padding-bottom: 10px;
+          text-align: center;
+          font-weight: bold;
+        }
+
+        p {
+          float: left;
+          width: calc(100% / 2);
+          padding: 0 20px;
+        }
+        p.date {
+          text-align: right;
+        }
+        p.requests {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
